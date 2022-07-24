@@ -1,9 +1,5 @@
 ## PrintMap 
 
- 
- 
- 
-
 Es un package creado con la intención de facilitar la lectura de datos de tipo ```Map<dynamic,dyanmic>``` que obtengamos como respuesta de alguna *API* o necesitamos visualizar un *DTO, Modelo u Entidad*. 
 
 Un claro ejemplo es a la hora de imprimir un Map utilizando ```print()```, 
@@ -34,22 +30,45 @@ final json = {
     ],
 };
 
+print(json);
+
+printMap(json);
+
 ``` 
 
 > la salida normal obtenida por el ```print(json)``` seria la siguiente: 
 
 
-<p align="center">
-<img src="https://github.com/dewetbaumann/dart-print-map/blob/main/normal-print.png" width="100%" alt="PrintMap" />
-</p>
+```text
+{string: This a string, stringEmpty: , int: 581, double: 3.1492, nullValue: null, homogenuosList: [1, 2, 3, 4, 5, 6], mapIntoMap: {1: Apple, 2: Orange, 3: Banana, 4: Berry}, notHomogenuosList: [1, a, {}, 2.9867, [], null]}
+```
 
 > En cambio utilizado este package la salida seria la siguiente 
 
-<p align="center">
-<img src="https://github.com/dewetbaumann/dart-print-map/blob/main/package.png" width="70%" alt="PrintMap" />
-</p>
-
-
+```dart
+{
+    string: 'This a string',
+    stringEmpty: '',
+    int: 581,
+    double: 3.1492,
+    nullValue: null,
+    homogenuosList: [1, 2, 3, 4, 5, 6]
+    mapIntoMap: {
+        1: 'Apple',
+        2: 'Orange',
+        3: 'Banana',
+        4: 'Berry',
+    },
+    notHomogenuosList: [
+        1,
+        'a',
+        {},
+        2.9867,
+        [],
+        null,
+    ],
+},
+```
 
 ## Ventajas 
 
@@ -59,7 +78,6 @@ Hay una notable mejora en la representación de los objetos, facilitando así su
 `String` 
 
 - Si están vacíos se representan con dos comillas simples. 
-
 - Se representan con color blanco. 
 
 
@@ -76,9 +94,3 @@ Hay una notable mejora en la representación de los objetos, facilitando así su
 ## Desventajas 
 
 **1. ninguna.** 
-
-## NO USAR `i` 
-
-El package recibe como parámetro opcional `i= 0`, esto es así porque se utiliza recursividad, no usar el parámetro, simplemente llamar a la función `printMap(json)` y es todo. 
-
- 

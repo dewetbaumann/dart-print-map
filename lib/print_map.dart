@@ -1,7 +1,9 @@
 // ignore_for_file: avoid_print
 library print_map;
 
-void printMap(Map json, {int i = 0}) {
+void printMap(Map json) => _printMap(json, i: 0);
+
+void _printMap(Map json, {required int i}) {
   final preSpace = _generateSpaces(i);
   final space = _generateSpaces(i + 1);
 
@@ -14,7 +16,7 @@ void printMap(Map json, {int i = 0}) {
       canPrint = false;
       if (v.isNotEmpty) {
         print('$space$k: {');
-        printMap(v, i: i + 1);
+        _printMap(v, i: i + 1);
       } else {
         value = '{}';
       }
@@ -115,7 +117,7 @@ void _printListNotHomogenuos(List list, int i) {
       if (item.isNotEmpty) {
         canPrint = false;
         print('$space{');
-        printMap(item, i: i + 1);
+        _printMap(item, i: i + 1);
       } else {
         value = '{}';
       }
@@ -162,7 +164,7 @@ void _printListHomogenuos(List list, int i, {String key = ''}) {
     for (final item in list) {
       if ((item as Map<dynamic, dynamic>).isNotEmpty) {
         print('$space{');
-        printMap(item, i: i);
+        _printMap(item, i: i);
       } else {
         print('$space{},');
       }

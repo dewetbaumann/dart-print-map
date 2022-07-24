@@ -28,7 +28,7 @@ void main() {
       ],
     };
 
-    print('Normal map print on Dart');
+    print('\nNormal map print on Dart');
     print(json);
 
     print('\nUsing this package');
