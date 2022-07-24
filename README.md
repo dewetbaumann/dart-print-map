@@ -10,7 +10,7 @@ Un claro ejemplo es a la hora de imprimir un Map utilizando ```print()```,
 
 tenemos el siguiente "JSON" que creamos con fines didácticos. 
 
-``` 
+```dart
 final json = {
     'string': 'This a string',
     'stringEmpty': '',
@@ -39,16 +39,14 @@ final json = {
 > la salida normal obtenida por el ```print(json)``` seria la siguiente: 
 
 
-``` 
-
-{string: This a string, stringEmpty: , int: 581, double: 3.1492, nullValue: null, homogenuosList: [1, 2, 3, 4, 5, 6], mapIntoMap: {1: Apple, 2: Orange, 3: Banana, 4: Berry}, notHomogenuosList: [1, a, {}, 2.9867, [], null]} 
-
-``` 
+<p align="center">
+<img src="https://github.com/dewetbaumann/dart-print-map/blob/main/normal-print.png" width="80%" alt="PrintMap" />
+</p>
 
 > En cambio utilizado este package la salida seria la siguiente 
 
 <p align="center">
-<img src="https://github.com/dewetbaumann/dart-print-map/blob/main/package.png" width="100%" alt="PrintMap" />
+<img src="https://github.com/dewetbaumann/dart-print-map/blob/main/package.png" width="80%" alt="PrintMap" />
 </p>
 
 
