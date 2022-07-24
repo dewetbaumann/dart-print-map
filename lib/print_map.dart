@@ -33,11 +33,11 @@ void printMap(Map json, {int i = 0}) {
       if (v.isNotEmpty) {
         canPrint = false;
         final bool isHomo = _isHomogenuos(v);
-        print('$space$k: [');
         if (isHomo) {
-          _printListHomogenuos(v, i + 2, key: k.toString());
+          _printListHomogenuos(v, i + 1, key: k.toString());
         } else {
-          _printListNotHomogenuos(v, i + 2);
+          print('$space$k: [');
+          _printListNotHomogenuos(v, i + 1);
           print('$space],');
         }
       } else {
@@ -112,8 +112,8 @@ void _printListNotHomogenuos(List list, int i) {
     bool canPrint = true;
 
     if (item is Map) {
-      canPrint = false;
       if (item.isNotEmpty) {
+        canPrint = false;
         print('$space{');
         printMap(item, i: i + 1);
       } else {
