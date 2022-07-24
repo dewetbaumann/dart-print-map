@@ -40,13 +40,13 @@ final json = {
 
 
 <p align="center">
-<img src="https://github.com/dewetbaumann/dart-print-map/blob/main/normal-print.png" width="80%" alt="PrintMap" />
+<img src="https://github.com/dewetbaumann/dart-print-map/blob/main/normal-print.png" width="100%" alt="PrintMap" />
 </p>
 
 > En cambio utilizado este package la salida seria la siguiente 
 
 <p align="center">
-<img src="https://github.com/dewetbaumann/dart-print-map/blob/main/package.png" width="80%" alt="PrintMap" />
+<img src="https://github.com/dewetbaumann/dart-print-map/blob/main/package.png" width="70%" alt="PrintMap" />
 </p>
 
 
