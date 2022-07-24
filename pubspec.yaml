@@ -1,6 +1,6 @@
 name: print_map
-description: Simple package to print Map & Json objects.
-version: 1.0.0
+description: Simple package to print Map & Json objects with some colors and better read.
+version: 1.0.1
 repository: https://github.com/dewetbaumann/dart-print-map
 
 environment:
