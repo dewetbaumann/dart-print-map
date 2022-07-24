@@ -4,7 +4,7 @@ version: 1.0.0
 repository: https://github.com/dewetbaumann/dart-print-map
 
 environment:
-  sdk: ">=2.10.4 <3.0.0"
+  sdk: ">=2.13.0 <3.0.0"
 
 dependencies:
 

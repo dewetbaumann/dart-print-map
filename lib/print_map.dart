@@ -162,7 +162,7 @@ void _printListHomogenuos(List list, int i, {String key = ''}) {
     for (final item in list) {
       if ((item as Map<dynamic, dynamic>).isNotEmpty) {
         print('$space{');
-        printMap(item as Map<dynamic, dynamic>, i: i);
+        printMap(item, i: i);
       } else {
         print('$space{},');
       }
