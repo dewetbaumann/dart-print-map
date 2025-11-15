@@ -1,19 +1,12 @@
-## 0.0.1
+## 2.0.0+0
 
-* Initial release.
-
-## 1.0.0
-
-* Some publish fixes.
-
-## 1.0.1
-
-* Readme.md added.
-
-## 1.0.1+1
-
-* Readme.md modify.
+* Added comprehensive documentation with examples
+* Improved README with visual comparisons and use cases
+* Added support for header, footer, and timestamp parameters
+* Enhanced colored output for better readability
+* Optimized homogeneous list detection and printing
+* Added extensive examples and test coverage
 
 ## 1.1.0+0
 
-* Fix usage of parameter i.
+* First release
