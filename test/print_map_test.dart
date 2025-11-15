@@ -73,12 +73,12 @@ void main() {
                     'enabled': true,
                     'timeout': 3000,
                     'retries': 3,
-                  }
-                }
-              }
-            }
-          }
-        }
+                  },
+                },
+              },
+            },
+          },
+        },
       },
 
       // Arrays de objetos complejos
@@ -93,7 +93,7 @@ void main() {
           'metadata': {
             'lastLogin': '2024-01-15T10:30:00Z',
             'loginCount': 42,
-          }
+          },
         },
         {
           'id': 2,
@@ -105,7 +105,7 @@ void main() {
           'metadata': {
             'lastLogin': null,
             'loginCount': 0,
-          }
+          },
         },
         {
           'id': 3,
@@ -114,7 +114,7 @@ void main() {
           'active': true,
           'balance': -50.25,
           'roles': [],
-          'metadata': {}
+          'metadata': {},
         }
       ],
 
@@ -130,7 +130,7 @@ void main() {
         '',
         false,
         {
-          'another': {'deep': 'nest'}
+          'another': {'deep': 'nest'},
         }
       ],
 
@@ -138,7 +138,7 @@ void main() {
       'matrix': [
         [1, 2, 3],
         [4, 5, 6],
-        [7, 8, 9]
+        [7, 8, 9],
       ],
 
       // Casos especiales
@@ -164,11 +164,11 @@ void main() {
             'perPage': 10,
             'total': 100,
             'hasMore': true,
-          }
+          },
         },
         'errors': null,
-        'warnings': []
-      }
+        'warnings': [],
+      },
     };
 
     print('\nExtensive data types test');

@@ -17,15 +17,7 @@ void printMap(
   String? footer,
   bool timestamp = false,
 }) {
-  String _timestampPrefix() {
-    final now = DateTime.now();
-    String two(int n) => n.toString().padLeft(2, '0');
-    String three(int n) => n.toString().padLeft(3, '0');
-    final time = '${two(now.hour)}:${two(now.minute)}:${two(now.second)}.${three(now.millisecond)}';
-    return '[$time] ';
-  }
-
-  final prefix = timestamp ? _timestampPrefix() : '';
+  final prefix = timestamp ? _MapPrinter.timestampPrefix() : '';
 
   if (header != null && header.isNotEmpty) {
     print('$prefix$header');
@@ -44,8 +36,6 @@ void printMap(
     print(_MapPrinter._magenta('$value'));
   } else if (value == null) {
     print(_MapPrinter._cyan('null'));
-  } else {
-    print(value.toString());
   }
 
   if (footer != null && footer.isNotEmpty) {
@@ -79,7 +69,15 @@ class _MapPrinter {
   static String _green(String text) => _colorize(text, '32');
 
   /// Returns the text in blue color (currently unused, reserved for future use).
-  static String _blue(String text) => _colorize(text, '34');
+  // static String _blue(String text) => _colorize(text, '34');
+
+  static String timestampPrefix() {
+    final now = DateTime.now();
+    String two(int n) => n.toString().padLeft(2, '0');
+    String three(int n) => n.toString().padLeft(3, '0');
+    final time = '${two(now.hour)}:${two(now.minute)}:${two(now.second)}.${three(now.millisecond)}';
+    return '[$time] ';
+  }
 
   /// Prints a list with appropriate formatting.
   ///
